@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif ;
+}
+
+
+/*Portada*/
+
+header{
+  width: 100%;
+  height: 100vh;
+  background: url(img/portada4.jpg);
+  background-position: center;
+  background-size: 100%;
+}
+
+nav{
+  text-align:right;
+  height: 5vh;
+  background-color: rgba(46, 47, 47, 0.75);
+  padding-top: 10px;
+}
+.navbar{
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+nav a{
+  text-decoration: none;
+  padding: 14px;
+  color: rgb(244, 240, 240);
+  font-weight: 600;
+  font-size: 18px;
+}
+.navbar a:hover{
+  color: rgb(234, 155, 81);
+  font-size: 22px;
+  transition: 1s ease;
+}
+
+.title{
+  text-align: center;
+  padding-top: 190px;
+}
+
+.title h1{
+  font-size:60px;
+  color: rgb(225, 225, 225);
+  background: rgba(240, 151, 41, 0.408);
+  letter-spacing: 5px;
+}
+
+.title p{
+  padding: 40px;
+  font-size: 35px;
+  font-weight: 700;
+  background: rgba(239, 169, 62, 0.447);
+  color: rgb(252, 252, 251);
+  letter-spacing: 4px;
+}
+
+/*Quienes Somos*/
+
+.quiensomos{
+  width: 100%;
+  height: 73vh;
+  display: flex;
+  background: linear-gradient(rgba(232, 200, 154, 0.665),rgba(237, 180, 113, 0.515),rgba(249, 247, 247, 0.693));
+}
+.description h3{
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  margin: 15px;
+}
+
+.description p{
+  margin: 30px;
+  font-size: 20px;
+  
+  letter-spacing: 1px;
+}
+
+.tienda {
+  padding-top: 80px;
+}
+.tienda img{
+  border-radius: 20px;
+  width: 330px;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
+  
+}
+/*GALERIA*/
+
+
+.container-grid{
+  text-align: center;
+  display: block;
+  height: 110vh;
+  background:linear-gradient(rgba(255, 255, 255, 0.493),rgba(239, 204, 161, 0.332),rgba(228, 141, 49, 0.208)), url(img/mercedes.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.container-grid h2{
+  padding-top: 30px;
+  font-size: 50px;
+  
+}
+
+.container-grid p{
+  font-size: 30px;
+  margin: 20px;
+}
+ .tru img{
+  
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px;
+  border: 6px solid rgba(220, 184, 126, 0.634);
+  border-radius: 20px;
+}
+img:hover{
+  cursor: pointer;
+  
+  
+  transition: 1.5s ease;
+  border: 12px solid rgba(237, 181, 97, 0.853);
+}
+
+.container-img{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  transform: translateX(-100%);
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .4s ease-in;
+  
+}
+
+
+.move{
+  transform: translateX(0);
+}
+
+.img-show{
+  height: 80%;
+  width: 80%;
+  display: block;
+  object-fit: cover;
+}
+
+.copy{
+  position: fixed;
+  color: aliceblue;
+  bottom: 40px;
+}
+
+.bx.bx-x{
+  position: absolute;
+  color: aliceblue;
+  top: 20px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/*Fin Galeria*/
+
+/*Formulario*/
+
+.form{
+  text-align: center;
+  height: 110vh;
+  background:linear-gradient(rgba(244, 241, 241, 0.651),rgba(237, 232, 232, 0.651),rgba(239, 143, 47, 0.551)), url(img/fondoporche.jpg);
+  border: solid 1px black;
+}
+
+.form h2 {
+  padding-top: 50px;
+  font-size: 50px;
+}
+.form h3{
+  padding: 20px;
+  font-size: 30px;
+}
+.form label{
+  font-size: 20px;
+  font-weight: 500;
+}
+.form input{
+  font-size: 19px;
+  border-radius: 20px;
+  
+}
+
+/* Donde Econtrarnos */
+.contacto{
+  padding: 20px;
+
+}
+.contacto p{
+  font-size: 23px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#map{
+  height: 500px;
+  width: 70%;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display:block;
+}
+.maps h3{
+  font-size: 50px;
+  padding-top: 30px;
+}
+.maps{
+  text-align: center;
+  height: 130vh;
+    background:linear-gradient(rgba(255, 255, 255, 0.493),rgba(239, 204, 161, 0.332),rgba(226, 146, 59, 0.208));
+
+}
+
+/* Footer */
+.footer {
+height: 20vh;
+background-color: #5855556a;
+padding : 30px;
+
+text-align: center;
+font-size: 18px;
+color: #000000;
+}
